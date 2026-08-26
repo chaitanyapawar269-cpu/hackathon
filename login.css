@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #F5F3EA;
+}
+
+#login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+#login-box {
+    width: 100%;
+    max-width: 440px;
+
+    padding: 45px;
+
+    background-color: #FFFDF7;
+
+    border: 1px solid #D9DED8;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 30px rgba(23, 107, 91, 0.08);
+}
+
+#login-logo {
+    text-align: center;
+
+    color: #176B5B;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+}
+
+#login-box h1 {
+    text-align: center;
+
+    color: #202522;
+
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#login-subtitle {
+    text-align: center;
+
+    color: #66706B;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 35px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    color: #202522;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #C8D0CA;
+    border-radius: 7px;
+
+    background-color: #FFFFFF;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: #176B5B;
+}
+
+#login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+}
+
+#remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #66706B;
+
+    cursor: pointer;
+}
+
+#remember input {
+    accent-color: #176B5B;
+}
+
+#login-options a {
+    color: #176B5B;
+
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#login-options a:hover {
+    text-decoration: underline;
+}
+
+#login-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #176B5B;
+    color: #FFFFFF;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+#login-btn:hover {
+    background-color: #125447;
+}
+
+#signup-text {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #66706B;
+
+    font-size: 13px;
+}
+
+#signup-text a {
+    color: #176B5B;
+
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#signup-text a:hover {
+    text-decoration: underline;
+}
