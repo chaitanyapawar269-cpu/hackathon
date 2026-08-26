@@ -8,51 +8,53 @@ body{
 } 
  
 /*Ye le Navbar */ 
-#navbar { 
-    height: 70px; 
-    display: flex; 
-    align-items: center; 
-    padding: 0 8%; 
- 
-    background-color: #FFFDF7; 
-    border-bottom: 1px solid #D9DED8; 
-} 
- 
-#web-namee { 
-    margin-right: auto; 
- 
-    font-size: 22px; 
-    font-weight: 700; 
-    color: #202522; 
-} 
- 
-#navbar > div:not(#web-namee) { 
-    margin-left: 35px; 
- 
-    font-size: 15px; 
-    font-weight: 500; 
-    color: #66706B; 
- 
-    cursor: pointer; 
-    transition: 0.2s ease; 
-} 
- 
-#navbar > div:not(#web-namee):hover { 
-    color: #176B5B; 
-} 
- 
-/*Ye le aur sexy navbarr*/ 
-#navbar > div:last-child { 
-    background-color: #176B5B; 
-    color: white !important; 
- 
-    padding: 10px 20px; 
-    border-radius: 7px; 
-} 
-#navbar > div:last-child:hover { 
-    background-color: #125447; 
-} 
- 
+#navbar {  
+    height: 70px;  
+    display: flex;  
+    align-items: center;  
+    padding: 0 8%;  
+  
+    background-color: #FFFDF7;  
+    border-bottom: 1px solid #D9DED8;  
+}  
+  
+#web-namee {  
+    margin-right: auto;  
+  
+    font-size: 22px;  
+    font-weight: 700;  
+    color: #202522;  
+}  
+  
+#navbar > a {  
+    margin-left: 35px;  
+  
+    font-size: 15px;  
+    font-weight: 500;  
+    color: #66706B;  
+  
+    text-decoration: none;
+    cursor: pointer;  
+    transition: 0.2s ease;  
+}  
+  
+#navbar > a:hover {  
+    color: #176B5B;  
+}  
+  
+/*Ye le aur sexy navbarr*/  
+#navbar > a:last-child {  
+    background-color: #176B5B;  
+    color: white !important;  
+  
+    padding: 10px 20px;  
+    border-radius: 7px;  
+}  
+
+#navbar > a:last-child:hover {  
+    background-color: #125447;  
+}
+
 #upper-body { 
     text-align: center; 
     padding-top: 80px; 
