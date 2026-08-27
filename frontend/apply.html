@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,6 +94,8 @@
 
                         </select>
 
+                        <p id="instrument-type-error" class="error-message"></p>
+
                     </div>
 
 
@@ -107,6 +110,8 @@
                             id="instrument-id"
                             placeholder="Enter instrument ID"
                         >
+
+                        <p id="instrument-id-error" class="error-message"></p>
 
                     </div>
 
@@ -123,6 +128,8 @@
                             placeholder="Enter manufacturer name"
                         >
 
+                        <p id="manufacturer-error" class="error-message"></p>
+
                     </div>
 
 
@@ -137,6 +144,8 @@
                             id="model-number"
                             placeholder="Enter model number"
                         >
+
+                        <p id="model-number-error" class="error-message"></p>
 
                     </div>
 
@@ -153,6 +162,8 @@
                             placeholder="Enter serial number"
                         >
 
+                        <p id="serial-number-error" class="error-message"></p>
+
                     </div>
 
 
@@ -167,6 +178,8 @@
                             id="capacity"
                             placeholder="Example: 100 kg"
                         >
+
+                        <p id="capacity-error" class="error-message"></p>
 
                     </div>
 
@@ -201,6 +214,8 @@
                             placeholder="Enter owner name"
                         >
 
+                        <p id="owner-name-error" class="error-message"></p>
+
                     </div>
 
 
@@ -215,6 +230,8 @@
                             id="phone"
                             placeholder="Enter contact number"
                         >
+
+                        <p id="phone-error" class="error-message"></p>
 
                     </div>
 
@@ -231,6 +248,8 @@
                             placeholder="Enter email address"
                         >
 
+                        <p id="email-error" class="error-message"></p>
+
                     </div>
 
 
@@ -245,6 +264,8 @@
                             id="location"
                             placeholder="City / Location"
                         >
+
+                        <p id="location-error" class="error-message"></p>
 
                     </div>
 
@@ -261,6 +282,8 @@
                         id="address"
                         placeholder="Enter complete address"
                     ></textarea>
+
+                    <p id="address-error" class="error-message"></p>
 
                 </div>
 
@@ -287,11 +310,14 @@
                     <input
                         type="file"
                         id="documents"
+                        accept=".pdf,.jpg,.jpeg,.png"
                     >
 
                     <small>
                         Accepted formats: PDF, JPG, PNG
                     </small>
+
+                    <p id="documents-error" class="error-message"></p>
 
                 </div>
 
@@ -335,5 +361,8 @@
 
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>

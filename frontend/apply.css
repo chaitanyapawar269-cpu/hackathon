@@ -341,3 +341,16 @@ body {
         padding: 25px;
     }
 }
+
+/* form validation */
+.error-message {
+    display: none;
+    color: #d92d20;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.error-message.isVisible {
+    display: block;
+}

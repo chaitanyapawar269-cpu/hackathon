@@ -96,3 +96,220 @@ if (signup_form) {
 
     })
 }
+
+//validate (apply for verification) form ..
+
+let applicationForm = document.querySelector("#application-form");
+
+if (applicationForm) {
+
+    applicationForm.addEventListener("submit", function (evt) {
+
+        evt.preventDefault();
+
+
+        // Get inputs
+        let instrumentType = document.querySelector("#instrument-type");
+        let instrumentId = document.querySelector("#instrument-id");
+        let manufacturer = document.querySelector("#manufacturer");
+        let modelNumber = document.querySelector("#model-number");
+        let serialNumber = document.querySelector("#serial-number");
+        let capacity = document.querySelector("#capacity");
+
+        let ownerName = document.querySelector("#owner-name");
+        let phone = document.querySelector("#phone");
+        let email = document.querySelector("#email");
+        let location = document.querySelector("#location");
+        let address = document.querySelector("#address");
+
+        let documents = document.querySelector("#documents");
+
+
+        // Regex
+        const fullNameRegex = /^[A-Za-z]+(?:[ '-][A-Za-z]+)+$/;
+
+        const phoneRegex = /^[6-9]\d{9}$/;
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+        // Remove previous errors
+        document.querySelectorAll(".error-message")
+            .forEach(function (error) {
+                error.classList.remove("isVisible");
+                error.textContent = "";
+            });
+
+
+        let isValid = true;
+
+
+        // Instrument type
+        if (instrumentType.value === "") {
+
+            showError(
+                "instrument-type-error",
+                "Please select an instrument type."
+            );
+
+            isValid = false;
+        }
+
+
+        // Instrument ID
+        if (instrumentId.value.trim() === "") {
+
+            showError(
+                "instrument-id-error",
+                "Please enter the instrument ID."
+            );
+
+            isValid = false;
+        }
+
+
+        // Manufacturer
+        if (manufacturer.value.trim() === "") {
+
+            showError(
+                "manufacturer-error",
+                "Please enter the manufacturer name."
+            );
+
+            isValid = false;
+        }
+
+
+        // Model number
+        if (modelNumber.value.trim() === "") {
+
+            showError(
+                "model-number-error",
+                "Please enter the model number."
+            );
+
+            isValid = false;
+        }
+
+
+        // Serial number
+        if (serialNumber.value.trim() === "") {
+
+            showError(
+                "serial-number-error",
+                "Please enter the serial number."
+            );
+
+            isValid = false;
+        }
+
+
+        // Capacity
+        if (capacity.value.trim() === "") {
+
+            showError(
+                "capacity-error",
+                "Please enter the capacity or range."
+            );
+
+            isValid = false;
+        }
+
+
+        // Owner name
+        if (!fullNameRegex.test(ownerName.value.trim())) {
+
+            showError(
+                "owner-name-error",
+                "Please enter the full owner or organization name."
+            );
+
+            isValid = false;
+        }
+
+
+        // Phone
+        if (!phoneRegex.test(phone.value.trim())) {
+
+            showError(
+                "phone-error",
+                "Please enter a valid 10-digit phone number."
+            );
+
+            isValid = false;
+        }
+
+
+        // Email
+        if (!emailRegex.test(email.value.trim())) {
+
+            showError(
+                "email-error",
+                "Please enter a valid email address."
+            );
+
+            isValid = false;
+        }
+
+
+        // Location
+        if (location.value.trim() === "") {
+
+            showError(
+                "location-error",
+                "Please enter the location."
+            );
+
+            isValid = false;
+        }
+
+
+        // Address
+        if (address.value.trim() === "") {
+
+            showError(
+                "address-error",
+                "Please enter the complete address."
+            );
+
+            isValid = false;
+        }
+
+
+        // Documents
+        if (documents.files.length === 0) {
+
+            showError(
+                "documents-error",
+                "Please upload a supporting document."
+            );
+
+            isValid = false;
+        }
+
+
+        // Final result
+        if (isValid) {
+
+            console.log("Form is valid!");
+            applicationForm.reset();
+
+            // Later you can submit the form / store data / redirect
+            // applicationForm.submit();
+
+        }
+
+    });
+
+
+    // Function to show error
+    function showError(errorId, message) {
+
+        let error = document.querySelector("#" + errorId);
+
+        error.textContent = message;
+
+        error.classList.add("isVisible");
+    }
+
+}
