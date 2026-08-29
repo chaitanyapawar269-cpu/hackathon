@@ -1,0 +1,670 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f7f9f7;
+    color: #1f2d24;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+#navbar {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8%;
+
+    background-color: #fffdf7;
+
+    border-bottom: 1px solid #d9ded8;
+}
+
+#web-namee {
+    margin-right: auto;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#navbar a {
+    margin-left: 30px;
+
+    text-decoration: none;
+
+    color: #34443a;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    color: #1f6b45;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+#verify-page {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 70px 0 90px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+#verify-heading {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+}
+
+.eyebruhh {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #28734b;
+}
+
+#verify-heading h1 {
+    font-size: clamp(32px, 5vw, 48px);
+
+    margin-bottom: 15px;
+}
+
+#verify-heading p {
+    color: #68756d;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   VERIFICATION CARD
+========================= */
+
+#verification-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #dce3dc;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(31, 45, 36, 0.06);
+}
+
+#verification-card h2 {
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.card-description {
+    color: #748078;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+#search-box {
+    display: flex;
+
+    flex-direction: column;
+}
+
+#search-box label {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+#instrument-id {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #ccd5cd;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+#instrument-id:focus {
+    border-color: #28734b;
+
+    box-shadow: 0 0 0 3px rgba(40, 115, 75, 0.08);
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+    display: none;
+
+    margin-top: 6px;
+
+    color: #d92d20;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.error-message.isVisible {
+    display: block;
+}
+
+
+/* =========================
+   VERIFY BUTTON
+========================= */
+
+#verify-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #28734b;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#verify-btn:hover {
+    background-color: #205d3d;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 30px 0;
+
+    color: #9aa49d;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background-color: #e1e6e1;
+}
+
+
+/* =========================
+   QR SECTION
+========================= */
+
+#qr-section {
+    text-align: center;
+
+    padding: 10px 20px;
+}
+
+#qr-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 10px;
+
+    background-color: #eef5ef;
+
+    color: #28734b;
+
+    font-size: 25px;
+}
+
+#qr-section h3 {
+    margin-bottom: 8px;
+
+    font-size: 17px;
+}
+
+#qr-section p {
+    max-width: 430px;
+
+    margin: 0 auto 18px;
+
+    color: #748078;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+#scan-btn {
+    padding: 11px 22px;
+
+    border: 1px solid #28734b;
+
+    border-radius: 7px;
+
+    background-color: white;
+
+    color: #28734b;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#scan-btn:hover {
+    background-color: #eef5ef;
+}
+
+
+/* =========================
+   VERIFICATION RESULT
+========================= */
+
+#verification-result {
+    max-width: 650px;
+
+    margin: 30px auto 0;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #cfe1d4;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(31, 45, 36, 0.06);
+}
+
+.result-hidden {
+    display: none;
+}
+
+#verified-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 12px;
+
+    border-radius: 50%;
+
+    background-color: #e8f5eb;
+
+    color: #28734b;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+#verified-text {
+    color: #28734b;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+#verified-description {
+    margin-top: 8px;
+
+    color: #748078;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   INSTRUMENT DETAILS
+========================= */
+
+#instrument-details {
+    margin-top: 25px;
+
+    border-top: 1px solid #e3e8e4;
+
+    text-align: left;
+}
+
+.detail-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #e3e8e4;
+
+    font-size: 13px;
+}
+
+.detail-row span {
+    color: #748078;
+}
+
+.detail-row strong {
+    text-align: right;
+
+    color: #26362c;
+}
+
+
+/* =========================
+   CERTIFICATE BUTTON
+========================= */
+
+#certificate-section {
+    margin-top: 25px;
+}
+
+#certificate-btn {
+    padding: 11px 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #28734b;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+#certificate-btn:hover {
+    background-color: #205d3d;
+}
+
+
+/* =========================
+   WHY VERIFY
+========================= */
+
+#verification-info {
+    margin-top: 80px;
+
+    text-align: center;
+}
+
+#verification-info h2 {
+    margin-bottom: 30px;
+
+    font-size: 25px;
+}
+
+#info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.info-card {
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #dce3dc;
+
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.info-number {
+    margin-bottom: 15px;
+
+    color: #28734b;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.info-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+}
+
+.info-card p {
+    color: #748078;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+#footer {
+    padding: 40px 8% 25px;
+
+    background-color: #1f2d24;
+
+    color: white;
+
+    text-align: center;
+}
+
+#footer-logo {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+#footer p {
+    color: #b9c4bd;
+
+    font-size: 13px;
+}
+
+#footer-bottom {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #3c4941;
+
+    color: #9daaa2;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    #navbar {
+        padding: 0 5%;
+    }
+
+    #navbar a {
+        margin-left: 15px;
+
+        font-size: 12px;
+    }
+
+    #web-namee {
+        font-size: 18px;
+    }
+
+    #verify-page {
+        width: 92%;
+
+        padding-top: 50px;
+    }
+
+    #verification-card,
+    #verification-result {
+        padding: 25px;
+    }
+
+    #info-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    #navbar {
+        height: auto;
+
+        padding: 18px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    #web-namee {
+        width: 100%;
+
+        margin-right: 0;
+    }
+
+    #navbar a {
+        margin-left: 0;
+
+        margin-right: 15px;
+    }
+
+    #verify-heading h1 {
+        font-size: 32px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .detail-row strong {
+        text-align: left;
+    }
+
+}

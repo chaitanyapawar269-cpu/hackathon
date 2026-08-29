@@ -313,3 +313,62 @@ if (applicationForm) {
     }
 
 }
+
+
+//Verify instrument JS.....
+
+let verifyBtn = document.querySelector("#verify-btn");
+
+if (verifyBtn) {
+
+    verifyBtn.addEventListener("click", function () {
+
+        let instrumentId =
+            document.querySelector("#instrument-id").value.trim();
+
+        let error =
+            document.querySelector("#instrument-id-error");
+
+        let result =
+            document.querySelector("#verification-result");
+
+
+        error.textContent = "";
+        error.classList.remove("isVisible");
+
+        result.classList.add("result-hidden");
+
+
+        if (instrumentId === "") {
+
+            error.textContent =
+                "Please enter an instrument ID.";
+
+            error.classList.add("isVisible");
+
+            return;
+        }
+
+
+        // Demo ID
+        if (instrumentId === "VW-2026-001234") {
+
+            result.classList.remove("result-hidden");
+
+            document.querySelector("#result-id").textContent =
+                instrumentId;
+
+        }
+
+        else {
+
+            error.textContent =
+                "Instrument not found or not verified.";
+
+            error.classList.add("isVisible");
+
+        }
+
+    });
+
+}

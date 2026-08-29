@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verify Instrument - VerifyWeigh</title>
+
+    <link rel="stylesheet" href="verify.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div id="navbar">
+
+        <div id="web-namee">
+            ⚖ VerifyWeigh
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="login.html">Login</a>
+
+    </div>
+
+
+    <!-- Main -->
+
+    <main id="verify-page">
+
+        <!-- Heading -->
+
+        <section id="verify-heading">
+
+            <div class="eyebruhh">
+                INSTRUMENT VERIFICATION
+            </div>
+
+            <h1>
+                Verify an Instrument
+            </h1>
+
+            <p>
+                Check the authenticity and verification status
+                of a weighing or measuring instrument.
+            </p>
+
+        </section>
+
+
+        <!-- Verification Card -->
+
+        <section id="verification-card">
+
+            <h2>
+                Enter Instrument ID
+            </h2>
+
+            <p class="card-description">
+                Enter the unique ID displayed on the instrument
+                or its verification certificate.
+            </p>
+
+
+            <div id="search-box">
+
+                <label for="instrument-id">
+                    Instrument ID
+                </label>
+
+                <input
+                    type="text"
+                    id="instrument-id"
+                    placeholder="Example: VW-2026-001234"
+                >
+
+                <p
+                    id="instrument-id-error"
+                    class="error-message"
+                ></p>
+
+                <button
+                    type="button"
+                    id="verify-btn"
+                >
+                    Verify Instrument
+                </button>
+
+            </div>
+
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+
+            <!-- QR -->
+
+            <div id="qr-section">
+
+                <div id="qr-icon">
+                    ▣
+                </div>
+
+                <h3>
+                    Scan QR Code
+                </h3>
+
+                <p>
+                    Scan the QR code attached to the instrument
+                    to instantly check its verification status.
+                </p>
+
+                <button
+                    type="button"
+                    id="scan-btn"
+                >
+                    Scan QR Code
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result -->
+
+        <section
+            id="verification-result"
+            class="result-hidden"
+        >
+
+            <div id="verified-icon">
+                ✓
+            </div>
+
+            <div id="verified-text">
+                VERIFIED
+            </div>
+
+            <p id="verified-description">
+                This instrument has been successfully verified.
+            </p>
+
+
+            <div id="instrument-details">
+
+                <div class="detail-row">
+
+                    <span>
+                        Instrument Type
+                    </span>
+
+                    <strong id="result-type">
+                        Digital Weighing Scale
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Instrument ID
+                    </span>
+
+                    <strong id="result-id">
+                        VW-2026-001234
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Manufacturer
+                    </span>
+
+                    <strong id="result-manufacturer">
+                        ABC Instruments
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Model Number
+                    </span>
+
+                    <strong id="result-model">
+                        DW-500
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Certificate Number
+                    </span>
+
+                    <strong id="result-certificate">
+                        CERT-2026-00123
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Verified On
+                    </span>
+
+                    <strong id="result-date">
+                        20 August 2026
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Valid Until
+                    </span>
+
+                    <strong id="result-valid">
+                        31 December 2026
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div id="certificate-section">
+
+                <button id="certificate-btn">
+                    View Certificate
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Information -->
+
+        <section id="verification-info">
+
+            <h2>
+                Why verify an instrument?
+            </h2>
+
+            <div id="info-grid">
+
+                <div class="info-card">
+
+                    <div class="info-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Check Authenticity
+                    </h3>
+
+                    <p>
+                        Confirm that the instrument has been
+                        officially verified.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Protect Customers
+                    </h3>
+
+                    <p>
+                        Ensure accurate measurements and
+                        transparent transactions.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Build Trust
+                    </h3>
+
+                    <p>
+                        Easily verify certificates and
+                        instrument details using the QR code.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+
+        <div id="footer-logo">
+            ⚖ VerifyWeigh
+        </div>
+
+        <p>
+            Digital verification for weighing and measuring instruments.
+        </p>
+
+        <div id="footer-bottom">
+            © 2026 VerifyWeigh. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
