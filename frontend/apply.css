@@ -317,22 +317,53 @@ body {
 
 @media (max-width: 700px) {
 
+    /* Navbar */
     #navbar {
-        padding: 0 5%;
+        height: auto;
+
+        padding: 18px 5%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #web-namee {
+        width: 100%;
+
+        margin-right: 0;
+        margin-bottom: 5px;
+
+        text-align: center;
+
+        font-size: 21px;
     }
 
     #navbar > a {
-        margin-left: 15px;
+        margin-left: 0;
+
+        font-size: 13px;
+
+        padding: 8px 10px;
+
+        white-space: nowrap;
     }
 
+    #navbar > a:last-child {
+        padding: 8px 14px;
+    }
+
+    /* Main Page */
     #apply-page {
         padding: 50px 5%;
     }
-
     #apply-heading h1 {
         font-size: 34px;
     }
 
+    /* Form */
     .form-grid {
         grid-template-columns: 1fr;
     }
@@ -341,6 +372,7 @@ body {
         padding: 25px;
     }
 }
+
 
 /* form validation */
 .error-message {
