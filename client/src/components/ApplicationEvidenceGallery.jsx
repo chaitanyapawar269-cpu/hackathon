@@ -1,0 +1,13 @@
+import React, { useEffect, useState } from 'react';
+import { FileText, Image as ImageIcon, LoaderCircle, RefreshCw } from 'lucide-react';
+import { api, mediaUrl } from '../services/api';
+
+export default function ApplicationEvidenceGallery() {
+  const [applications, setApplications] = useState([]); const [loading, setLoading] = useState(true); const [error, setError] = useState('');
+  async function load() { setLoading(true); setError(''); try { const { data } = await api.get('/applications'); setApplications(data); } catch (e) { setError(e.response?.data?.message || 'Could not load applications.'); } finally { setLoading(false); } }
+  useEffect(() => { load(); }, []);
+  if (loading) return <div className="instrument-loading"><LoaderCircle className="spin" size={18}/> Loading applications and uploaded evidence...</div>;
+  if (error) return <div className="form-error">{error}<button className="text-btn" onClick={load}><RefreshCw size={13}/> Retry</button></div>;
+  if (!applications.length) return <div className="panel empty-state">No applications yet. Register an instrument to start.</div>;
+  return <div className="application-evidence-grid">{applications.map(application => { const instrument = application.instrument; const documents = instrument?.documents || []; const images = documents.filter(document => document.mimeType?.startsWith('image/')); return <article className="panel application-evidence-card" key={application._id}><div className="application-card-photo">{images[0] ? <img src={mediaUrl(images[0].storagePath)} alt={`${instrument?.type || 'Instrument'} evidence`}/> : <div><ImageIcon size={26}/><span>No photo uploaded</span></div>}<span><ImageIcon size={12}/> {images.length}</span></div><div className="application-card-body"><div className="application-card-status"><strong>{application.status}</strong><small>{new Date(application.createdAt).toLocaleDateString()}</small></div><h2>{instrument?.type || 'Instrument application'}</h2><p>{instrument?.manufacturer || 'Manufacturer not provided'} · Serial {instrument?.serialNumber || 'Not provided'}</p><div className="application-card-meta"><span>Capacity<strong>{instrument?.capacity || 'Not provided'}</strong></span><span>Location<strong>{instrument?.installationLocation || 'Not provided'}</strong></span></div><div className="application-card-documents">{documents.map(document => <a href={mediaUrl(document.storagePath)} target="_blank" rel="noreferrer" key={document._id}>{document.mimeType?.startsWith('image/') ? <ImageIcon size={13}/> : <FileText size={13}/>} {document.originalName}</a>)}</div></div></article>; })}</div>;
+}
