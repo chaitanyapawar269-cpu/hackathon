@@ -1,0 +1,850 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+} 
+body{ 
+    font-family: "Inter", sans-serif; 
+     background-color: #F5F3EA; 
+     overflow-x: hidden;
+     width: 100%;
+} 
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+ 
+/*Ye le Navbar */ 
+#navbar {  
+    height: 70px;  
+    display: flex;  
+    align-items: center;  
+    padding: 0 8%;  
+  
+    background-color: #FFFDF7;  
+    border-bottom: 1px solid #D9DED8;  
+}  
+  
+#web-namee {  
+    margin-right: auto;  
+  
+    font-size: 22px;  
+    font-weight: 700;  
+    color: #202522;  
+}  
+  
+#navbar > a {  
+    margin-left: 35px;  
+  
+    font-size: 15px;  
+    font-weight: 500;  
+    color: #66706B;  
+  
+    text-decoration: none;
+    cursor: pointer;  
+    transition: 0.2s ease;  
+}  
+  
+#navbar > a:hover {  
+    color: #176B5B;  
+}  
+  
+/*Ye le aur sexy navbarr*/  
+#navbar > a:last-child {  
+    background-color: #176B5B;  
+    color: white !important;  
+  
+    padding: 10px 20px;  
+    border-radius: 7px;  
+}  
+
+#navbar > a:last-child:hover {  
+    background-color: #125447;  
+}
+
+#upper-body { 
+    text-align: center; 
+    padding-top: 80px; 
+} 
+ 
+.eyebruhh { 
+    color: #176B5B; 
+    font-size: 14px; 
+    font-weight: 700; 
+    letter-spacing: 1.5px; 
+    margin-bottom: 20px; 
+} 
+ 
+#upper-body h1 { 
+    color: #202522; 
+    font-size: 52px; 
+    line-height: 1.15; 
+    margin: 0; 
+} 
+ 
+#upper-body p { 
+    color: #66706B; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    max-width: 650px; 
+    margin: 25px auto 0; 
+} 
+#asli-kaam { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 18px; 
+    margin-top: 35px; 
+} 
+ 
+#asli-kaam a { 
+    text-decoration: none; 
+    padding: 14px 24px; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    font-weight: 600; 
+    transition: 0.2s ease; 
+} 
+ 
+/* Apply for Verification */ 
+#asli-kaam div:first-child a { 
+    background-color: #176B5B; 
+    color: #FFFFFF; 
+} 
+ 
+/* Verify an Instrument */ 
+#asli-kaam div:last-child a { 
+    background-color: #FFFDF7; 
+    color: #176B5B; 
+    border: 1px solid #176B5B; 
+} 
+ 
+/* Hover effects */ 
+#asli-kaam div:first-child a:hover { 
+    background-color: #125447; 
+} 
+ 
+#asli-kaam div:last-child a:hover { 
+    background-color: #E8F0EC; 
+} 
+ 
+#why-us { 
+    text-align: center; 
+    padding: 70px 8%; 
+} 
+ 
+#why-us h2 { 
+    margin-bottom: 40px; 
+} 
+#we-do { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+} 
+#we-do > div { 
+    padding: 25px; 
+    border: 1px solid #D9DED8; 
+    border-radius: 12px; 
+    text-align: center; 
+    background-color: #FFFDF7; 
+} 
+@media (max-width: 600px) { 
+    #we-do { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+} 
+#how-works { 
+    padding: 80px 8%; 
+    text-align: center; 
+} 
+ 
+#how-works h2 { 
+    margin-bottom: 50px; 
+} 
+ 
+#wtf { 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 30px; 
+} 
+ 
+.step { 
+    flex: 1;  /* Give each .step an equal share of the available space */ 
+    padding: 25px; 
+    background-color: #FFFDF7; 
+    border: 1px solid #D9DED8; 
+    border-radius: 14px; 
+    text-align: left; 
+} 
+ 
+.step span { 
+    display: inline-flex; /* the element behaves like an inline element, but its children are still laid out using Flexbox.*/ 
+    align-items: center; 
+    justify-content: center; 
+ 
+    width: 42px; 
+    height: 42px; 
+ 
+    background-color: #176B5B; 
+    color: white; 
+ 
+    border-radius: 50%; 
+    font-weight: 700; 
+} 
+ 
+.step h3 { 
+    margin: 20px 0 10px; 
+    color: #202522; 
+} 
+ 
+.step p { 
+    color: #66706B; 
+    line-height: 1.6; 
+} 
+#what-canU-verify h2{ 
+    text-align: center; 
+    margin-bottom: 50px; 
+ 
+} 
+#all-instru{ 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+} 
+.instru span{ 
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin: 1rem 0rem 1rem 0rem; 
+    font-size: 30px; /* icons */ 
+} 
+ 
+#verify-karr { 
+    padding: 80px 8%; 
+    text-align: center; 
+} 
+ 
+#verify-karr h2 { 
+    color: #202522; 
+    margin-bottom: 35px; 
+} 
+ 
+#kaise-kru { 
+    max-width: 700px; 
+    margin: auto; 
+    padding: 40px; 
+ 
+   background-color: #FFFDF7; 
+    border: 1px solid #D9DED8; 
+    border-radius: 16px; 
+ 
+    box-shadow: 0 8px 25px rgba(23, 107, 91, 0.08); 
+} 
+ 
+#aise-krr { 
+    color: #66706B; 
+    font-size: 16px; 
+    margin-bottom: 25px; 
+} 
+ 
+#phir-aise { 
+    display: flex; 
+    justify-content: center; 
+    gap: 12px; 
+} 
+ 
+#phir-aise input { 
+    flex: 1; 
+    max-width: 450px; 
+ 
+    padding: 14px 16px; 
+ 
+    border: 1px solid #C8D0CA; 
+    border-radius: 8px; 
+ 
+    font-size: 15px; 
+    outline: none; 
+} 
+ 
+#phir-aise input:focus { 
+    border-color: #176B5B; 
+} 
+ 
+#phir-aise button { 
+    padding: 14px 25px; 
+ 
+    border: none; 
+    border-radius: 8px; 
+ 
+    background-color: #176B5B; 
+    color: white; 
+ 
+    font-size: 15px; 
+    font-weight: 600; 
+ 
+    cursor: pointer; 
+    transition: 0.2s ease; 
+} 
+ 
+#phir-aise button:hover { 
+    background-color: #125447; 
+} 
+ 
+ 
+#qr-divider { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+ 
+    margin: 30px 0; 
+} 
+ 
+#qr-divider span { 
+    flex: 1; 
+    height: 1px; 
+    background-color: #D9DED8; 
+} 
+ 
+#qr-divider p { 
+    margin: 0; 
+ 
+    color: #7B857F; 
+    font-size: 13px; 
+    font-weight: 600; 
+} 
+ 
+#scan-qr { 
+    width: 100%; 
+ 
+    padding: 14px; 
+ 
+    background-color: #F0F3EC; 
+    color: #202522; 
+ 
+    border: 1px solid #C8D0CA; 
+    border-radius: 8px; 
+ 
+    font-size: 15px; 
+    font-weight: 600; 
+ 
+    cursor: pointer; 
+    transition: 0.2s ease; 
+} 
+ 
+#scan-qr i { 
+    margin-right: 8px; 
+    color: #176B5B; 
+} 
+ 
+#scan-qr:hover { 
+    background-color: #E8F0EC; 
+    border-color: #176B5B; 
+} 
+ 
+/**/ 
+#final-cta { 
+    margin: 60px 8% 0; 
+    padding: 60px 30px; 
+ 
+    text-align: center; 
+ 
+    background-color: #E8F0EC; 
+    border-radius: 16px; 
+} 
+ 
+#final-cta h2 { 
+    margin: 0 0 15px; 
+ 
+    color: #202522; 
+    font-size: 30px; 
+} 
+ 
+#final-cta p { 
+    margin: 0 auto 30px; 
+ 
+    max-width: 600px; 
+ 
+    color: #66706B; 
+    line-height: 1.6; 
+} 
+ 
+#final-cta a { 
+    display: inline-block; 
+ 
+    padding: 14px 25px; 
+ 
+    background-color: #176B5B; 
+    color: #FFFFFF; 
+ 
+    border-radius: 8px; 
+ 
+    text-decoration: none; 
+    font-weight: 600; 
+ 
+    transition: 0.2s ease; 
+} 
+ 
+#final-cta a:hover { 
+    background-color: #125447; 
+} 
+#footer { 
+    margin-top: 70px; 
+    padding: 60px 8% 25px; 
+ 
+    background-color: #18231F; 
+    color: #FFFFFF; 
+} 
+ 
+#footer-top { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr 1fr 1fr; 
+    gap: 50px; 
+ 
+    padding-bottom: 45px; 
+    border-bottom: 1px solid #34423C; 
+} 
+#footer-brand { 
+    max-width: 320px; 
+} 
+ 
+.footer-logo { 
+    font-size: 22px; 
+    font-weight: 700; 
+    margin-bottom: 15px; 
+} 
+ 
+#footer-brand p { 
+    color: #A7B5AE; 
+    font-size: 14px; 
+    line-height: 1.7; 
+} 
+.footer-column { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 12px; 
+} 
+ 
+.footer-column h3 { 
+    margin: 0 0 8px; 
+ 
+    font-size: 15px; 
+    color: #FFFFFF; 
+} 
+ 
+.footer-column a { 
+    color: #A7B5AE; 
+ 
+    text-decoration: none; 
+    font-size: 14px; 
+ 
+    transition: 0.2s ease; 
+} 
+ 
+.footer-column a:hover { 
+    color: #FFFFFF; 
+} 
+#footer-bottom { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+ 
+    padding-top: 25px; 
+ 
+    color: #788780; 
+    font-size: 13px; 
+}
+
+ /* =========================
+    RESPONSIVE DESIGN
+    ========================= */
+
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+    #navbar {
+        padding: 0 5%;
+    }
+
+    #navbar > a {
+        margin-left: 22px;
+    }
+
+
+    #upper-body {
+        padding: 70px 5% 0;
+    }
+
+    #upper-body h1 {
+        font-size: 44px;
+    }
+
+
+    #why-us {
+        padding: 60px 5%;
+    }
+
+
+    #how-works {
+        padding: 60px 5%;
+    }
+
+    #wtf {
+        flex-wrap: wrap;
+    }
+
+    .step {
+        flex: 1 1 45%;
+    }
+
+
+    #all-instru {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    .instru {
+        flex: 1 1 40%;
+    }
+
+
+    #verify-karr {
+        padding: 60px 5%;
+    }
+
+
+    #final-cta {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    #footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #footer-top {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+
+    /* Navbar */
+
+    #navbar {
+        height: auto;
+
+        padding: 18px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    #web-namee {
+        width: 100%;
+
+        margin-right: 0;
+
+        text-align: center;
+
+        margin-bottom: 5px;
+    }
+
+    #navbar > a {
+        margin-left: 0;
+
+        flex: 1;
+
+        text-align: center;
+
+        font-size: 13px;
+    }
+
+    #navbar > a:last-child {
+        padding: 9px 12px;
+    }
+
+
+    /* Hero Section */
+
+    #upper-body {
+        padding-top: 55px;
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .eyebruhh {
+        font-size: 12px;
+
+        letter-spacing: 1px;
+    }
+
+    #upper-body h1 {
+        font-size: 34px;
+
+        line-height: 1.2;
+    }
+
+    #upper-body p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Main Buttons */
+
+    #asli-kaam {
+        flex-direction: column;
+
+        gap: 12px;
+
+        margin-top: 30px;
+    }
+
+    #asli-kaam div {
+        width: 90%;
+    }
+
+    #asli-kaam a {
+        display: block;
+
+        text-align: center;
+    }
+
+
+    /* Why Us */
+
+    #why-us {
+        padding: 55px 5%;
+    }
+
+    #why-us h2 {
+        font-size: 24px;
+
+        margin-bottom: 30px;
+    }
+
+    #we-do {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+    #we-do > div {
+        padding: 20px 10px;
+
+        font-size: 14px;
+    }
+
+
+    /* How It Works */
+
+    #how-works {
+        padding: 55px 5%;
+    }
+
+    #how-works h2 {
+        font-size: 24px;
+
+        margin-bottom: 35px;
+    }
+
+    #wtf {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .step {
+        width: 100%;
+
+        flex: none;
+
+        padding: 22px;
+
+        text-align: left;
+    }
+
+    .step h3 {
+        margin-top: 15px;
+    }
+
+
+    /* Instruments */
+
+    #what-canU-verify {
+        padding: 0 5%;
+    }
+
+    #what-canU-verify h2 {
+        font-size: 24px;
+
+        margin-bottom: 35px;
+    }
+
+    #all-instru {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    .instru {
+        width: 100%;
+
+        padding: 15px;
+
+        border: 1px solid #D9DED8;
+
+        border-radius: 12px;
+
+        background-color: #FFFDF7;
+
+        text-align: center;
+    }
+
+    .instru span {
+        font-size: 28px;
+    }
+
+
+    /* Verify Instrument */
+
+    #verify-karr {
+        padding: 55px 5%;
+    }
+
+    #verify-karr h2 {
+        font-size: 24px;
+
+        margin-bottom: 30px;
+    }
+
+    #kaise-kru {
+        padding: 25px 18px;
+    }
+
+    #phir-aise {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    #phir-aise input {
+        width: 100%;
+
+        max-width: none;
+    }
+
+    #phir-aise button {
+        width: 100%;
+    }
+
+
+    /* Final CTA */
+
+    #final-cta {
+        margin: 30px 5% 0;
+
+        padding: 45px 20px;
+    }
+
+    #final-cta h2 {
+        font-size: 25px;
+    }
+
+    #final-cta p {
+        font-size: 14px;
+    }
+
+    #final-cta a {
+        display: block;
+    }
+
+
+    /* Footer */
+
+    #footer {
+        margin-top: 50px;
+
+        padding: 45px 5% 25px;
+    }
+
+    #footer-top {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+    }
+
+    #footer-brand {
+        grid-column: 1 / -1;
+
+        max-width: none;
+    }
+
+    #footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 400px) {
+
+    #navbar {
+        gap: 10px;
+    }
+
+    #navbar > a {
+        font-size: 12px;
+    }
+
+    #navbar > a:last-child {
+        padding: 8px 10px;
+    }
+
+
+    #upper-body h1 {
+        font-size: 29px;
+    }
+
+
+    #we-do {
+        grid-template-columns: 1fr;
+    }
+
+
+    #all-instru {
+        grid-template-columns: 1fr;
+    }
+
+
+    #footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    #footer-brand {
+        grid-column: auto;
+    }
+
+}

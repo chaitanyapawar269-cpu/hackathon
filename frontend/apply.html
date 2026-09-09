@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apply for Verification - VerifyWeigh</title>
+
+    <link rel="stylesheet" href="apply.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div id="navbar">
+
+        <div id="web-namee">⚖ VerifyWeigh</div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="login.html">Login</a>
+
+    </div>
+
+
+    <!-- Main Section -->
+
+    <main id="apply-page">
+
+        <div id="apply-heading">
+
+            <div class="eyebruhh">
+                ONLINE VERIFICATION
+            </div>
+
+            <h1>Apply for Verification</h1>
+
+            <p>
+                Register your weighing or measuring instrument
+                and submit a request for online verification.
+            </p>
+
+        </div>
+
+
+        <!-- Application Form -->
+
+        <form id="application-form">
+
+            <!-- Instrument Details -->
+
+            <section class="form-section">
+
+                <h2>Instrument Details</h2>
+
+                <p class="section-description">
+                    Provide the basic information about the instrument
+                    you want to get verified.
+                </p>
+
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label for="instrument-type">
+                            Instrument Type
+                        </label>
+
+                        <select id="instrument-type">
+
+                            <option value="">Select instrument type</option>
+
+                            <option value="weighing-scale">
+                                Weighing Scale
+                            </option>
+
+                            <option value="weighbridge">
+                                Weighbridge
+                            </option>
+
+                            <option value="measuring-instrument">
+                                Measuring Instrument
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                        <p id="instrument-type-error" class="error-message"></p>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="instrument-id">
+                            Instrument ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="instrument-id"
+                            placeholder="Enter instrument ID"
+                        >
+
+                        <p id="instrument-id-error" class="error-message"></p>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="manufacturer">
+                            Manufacturer
+                        </label>
+
+                        <input
+                            type="text"
+                            id="manufacturer"
+                            placeholder="Enter manufacturer name"
+                        >
+
+                        <p id="manufacturer-error" class="error-message"></p>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="model-number">
+                            Model Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="model-number"
+                            placeholder="Enter model number"
+                        >
+
+                        <p id="model-number-error" class="error-message"></p>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="serial-number">
+                            Serial Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="serial-number"
+                            placeholder="Enter serial number"
+                        >
+
+                        <p id="serial-number-error" class="error-message"></p>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="capacity">
+                            Capacity / Range
+                        </label>
+
+                        <input
+                            type="text"
+                            id="capacity"
+                            placeholder="Example: 100 kg"
+                        >
+
+                        <p id="capacity-error" class="error-message"></p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Owner Details -->
+
+            <section class="form-section">
+
+                <h2>Owner Details</h2>
+
+                <p class="section-description">
+                    Enter the details of the person or organization
+                    that owns the instrument.
+                </p>
+
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label for="owner-name">
+                            Owner / Organization Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="owner-name"
+                            placeholder="Enter owner name"
+                        >
+
+                        <p id="owner-name-error" class="error-message"></p>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Contact Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter contact number"
+                        >
+
+                        <p id="phone-error" class="error-message"></p>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter email address"
+                        >
+
+                        <p id="email-error" class="error-message"></p>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="location">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="City / Location"
+                        >
+
+                        <p id="location-error" class="error-message"></p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="address">
+                        Full Address
+                    </label>
+
+                    <textarea
+                        id="address"
+                        placeholder="Enter complete address"
+                    ></textarea>
+
+                    <p id="address-error" class="error-message"></p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Documents -->
+
+            <section class="form-section">
+
+                <h2>Supporting Documents</h2>
+
+                <p class="section-description">
+                    Upload the required documents for verification.
+                </p>
+
+
+                <div class="input-group">
+
+                    <label for="documents">
+                        Upload Documents
+                    </label>
+
+                    <input
+                        type="file"
+                        id="documents"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                    >
+
+                    <small>
+                        Accepted formats: PDF, JPG, PNG
+                    </small>
+
+                    <p id="documents-error" class="error-message"></p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Submit -->
+
+            <div id="submit-section">
+
+                <button type="submit" id="submit-btn">
+                    Submit Verification Request
+                </button>
+
+                <p>
+                    Your application will be reviewed after submission.
+                </p>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+
+        <div id="footer-logo">
+            ⚖ VerifyWeigh
+        </div>
+
+        <p>
+            Digital verification for weighing and measuring instruments.
+        </p>
+
+        <div id="footer-bottom">
+            © 2026 VerifyWeigh. All rights reserved.
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

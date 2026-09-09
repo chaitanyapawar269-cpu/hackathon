@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up - VerifyWeigh</title>
+
+    <link rel="stylesheet" href="signup.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="signup-page">
+
+        <div id="signup-box">
+
+            <div id="signup-logo">
+                ⚖ VerifyWeigh
+            </div>
+
+            <h1>Create an Account</h1>
+
+            <p id="signup-subtitle">
+                Create your account to manage instrument verification.
+            </p>
+
+            <form id="signup-form" novalidate>
+
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+
+                    <input 
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                    >
+                    <p class=" message" id="name-msg">Please enter full name</p>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+
+                    <input 
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+                    <p class=" message" id="email-error">Please enter valid email</p>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input 
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                    >
+                    <p class=" message" id="phone-no">Please enter a valid phone number</p>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+
+                    <input 
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                    >
+                    <p class=" message" id="pass-msg">Please enter a nice pass</p>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+
+                    <input 
+                        type="password"
+                        id="confirm-password"
+                        placeholder="Confirm your password"
+                    >
+                    <p class=" message" id="confirm-pass">dkfdkmd</p>
+                </div>
+
+                <label id="terms">
+                    <input type="checkbox">
+
+                    <span>
+                        I agree to the
+                        <a href="">Terms & Conditions</a>
+                    </span>
+                </label>
+
+                <button type="submit" id="signup-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p id="login-text">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
